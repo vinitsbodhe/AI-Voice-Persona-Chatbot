@@ -1,0 +1,6 @@
+Core Strengths:
+1. System Architecture: Designing modular, low-latency AI pipelines and distributed systems.
+2. Problem Solving: Debugging complex concurrency, memory leaks, or RAG retrieval quality issues.
+3. Rapid Prototyping: Able to take an idea and build a functional web-based MVP in a weekend.
+4. Collaboration: Excellent communication skills, active listener, and supportive mentor to junior developers.
+5. Focus on UX: Designing API endpoints with frontend ease-of-use and low latency in mind.

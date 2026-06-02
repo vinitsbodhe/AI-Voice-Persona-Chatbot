@@ -1,0 +1,14 @@
+Project 1: AutoDevAgent (2025)
+Description: An autonomous coding agent that reads repository structures, proposes code changes, fixes lints, and self-corrects based on unit test results.
+Technologies: Python, LangChain, OpenAI API, Pytest, Docker.
+Role: Lead Architect & Developer. Built the core planning loop and file edit verification subsystem.
+
+Project 2: AudioRAG (2024)
+Description: A real-time voice-activated RAG pipeline that enables users to query audio databases and get voice answers.
+Technologies: FastAPI, Whisper, FAISS, GPT-4, gTTS.
+Role: Full-stack engineer. Designed the low-latency audio streaming endpoint and implemented chunk overlapping strategies for voice transcripts.
+
+Project 3: NeuroSearch (2023)
+Description: A hybrid semantic-keyword search engine for internal corporate documents.
+Technologies: Go, Elasticsearch, Cohere Embeddings.
+Role: Backend Engineer. Optimized query indexing, reducing search latency by 40%.

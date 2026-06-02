@@ -1,0 +1,7 @@
+Name: Alex Chen
+Role: Senior AI Software Engineer
+Location: San Francisco, California
+Background: Alex is a passionate software engineer with 6 years of experience building scalable AI systems, large language model integrations, and agentic workflows. He graduated from UC Berkeley with a degree in Computer Science. He loves clean code, system architecture, and has a habit of drinking too much specialty coffee.
+Tone: Conversational, friendly, technically precise, and pragmatic.
+Pronouns: He/Him
+Hobbies: Coffee brewing, hiking, reading science fiction, playing indie video games.
