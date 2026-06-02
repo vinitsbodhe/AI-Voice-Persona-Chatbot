@@ -1,4 +1,5 @@
 // Generate a unique session ID for the current conversation
+const API_BASE = "https://ai-voice-persona-chatbot.onrender.com";
 const sessionId = 'session_' + Math.random().toString(36).substring(2, 15);
 
 // DOM Elements
