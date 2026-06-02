@@ -110,7 +110,7 @@ async function processAudio(audioBlob) {
         const formData = new FormData();
         formData.append('file', audioBlob, 'audio-record.webm');
 
-        const transcribeResponse = await fetch('https://ai-voice-persona-chatbot.onrender.com', {
+        const transcribeResponse = await fetch('https://ai-voice-persona-chatbot.onrender.com/api/transcribe', {
             method: 'POST',
             body: formData
         });
@@ -135,7 +135,7 @@ async function processAudio(audioBlob) {
         showStatus('Thinking...', 'purple');
         voiceStatus.textContent = 'Thinking...';
 
-        const chatResponse = await fetch('http://127.0.0.1:8001/api/chat', {
+        const chatResponse = await fetch('https://ai-voice-persona-chatbot.onrender.com/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -220,7 +220,7 @@ function setupUtilityEvents() {
         showToast('Re-indexing knowledge base...');
 
         try {
-            const response = await fetch('https://ai-voice-persona-chatbot.onrender.com', { method: 'POST' });
+            const response = await fetch('https://ai-voice-persona-chatbot.onrender.com/api/ingest', { method: 'POST' });
             if (response.ok) {
                 showToast('Knowledge base successfully indexed!');
             } else {
@@ -236,7 +236,7 @@ function setupUtilityEvents() {
     clearBtn.addEventListener('click', async () => {
         clearBtn.disabled = true;
         try {
-            const response = await fetch('https://ai-voice-persona-chatbot.onrender.comtt', {
+            const response = await fetch('https://ai-voice-persona-chatbot.onrender.com/api/clear', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ session_id: sessionId })
